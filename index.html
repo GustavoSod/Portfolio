@@ -4,18 +4,20 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
 </head>
+
 <body id="bd-1">
-    <header class="h-sec">
+    <header class="h-sec" id="header">
         <div class="lg">
             <h1 class="logo">Portfolio</h1>
         </div>
         <div class="mn-sec">
             <ul class="he-list">
-                <li class="he-item">about</li>
-                <li class="he-item">Skills</li>
-                <li class="he-item">Portfolio</li>
-                <li class="he-item">Contact</li>
+                <a href="#header" style="text-decoration: none; "><li class="he-item">About Me</li></a>
+                <a href="#sk" style="text-decoration: none;"><li class="he-item">Skills</li></a>
+                <a href="#sk" style="text-decoration: none;"><li class="he-item">Portfolio</li></a>
+                <a href="#sk" style="text-decoration: none;"><li class="he-item">Contact</li></a>
             </ul>
         </div>
     </header>
@@ -24,7 +26,10 @@
             <div class="personal-infos">
                 <h2>Gustavo Carreira</h2>
                 <h3>And i'm a <span style="color:#00EBEB;">Software Developer</span></h3>
-                <p>As a Front-End and Mobile Developer, I've been exploring architectures and development solutions with great enthusiasm. I'm here to build solid and efficient foundations for mobile and web applications. My focus on results and performance optimization skills ensure quality deliveries. I'm excited to collaborate on innovation and the success of your development team.</p>
+                <p>As a Software Developer, I've been exploring architectures and development solutions with
+                    great enthusiasm. I'm here to build solid and efficient foundations for mobile and web applications.
+                    My focus on results and performance optimization skills ensure quality deliveries. I'm excited to
+                    collaborate on innovation and the success of your development team.</p>
                 <div style="display: flex; margin-top: 40;" class="icons-sec">
                     <i class="fa fa-linkedin-square" id="icon1"></i>
                     <i class="fa fa-github" id="icon2"></i>
@@ -32,26 +37,40 @@
                 </div>
             </div>
             <div class="personal-img">
-                <img src="./assets/hex.png"/>
+                <img src="./assets/hex.png" />
             </div>
         </section>
-        <section class="sec-skills">
+        <section class="sec-skills" id="sk">
             <h1>My Skills</h1>
             <div class="skill-area">
                 <div class="skill1">
-                    <img src="./assets/webscreen.png" style=" width: 50px;;"/>
+                    <img src="./assets/webscreen.png" style=" width: 50px;;" />
                     <p class="t-skill">Web Development</p>
-                    <p class="p-skill">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita deserunt ad corporis optio, quos, modi cumque harum tempore dolores </p>
+                    <p class="p-skill"><span style="color: #00EBEB; font-weight: 600; font-size: 14">FRONT-END:</span>
+                        Tenho experiência utilizando React com TypeScript para a criação de interfaces web dinâmicas e
+                        responsivas.<br><br>
+                        <span style="color: #00EBEB; font-weight: 600; font-size: 14">BACK-END: </span> Possuo expertise
+                        em Java Spring Boot para construção de robustas estruturas, garantindo eficiência em cada
+                        aspecto do desenvolvimento.
+                    </p>
                 </div>
                 <div class="skill1">
-                    <img src="./assets/smartphone.png" style=" width: 50px;;"/>
+                    <img src="./assets/smartphone.png" style=" width: 50px;;" />
                     <p class="t-skill">Mobile Development</p>
-                    <p class="p-skill">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita deserunt ad corporis optio, quos, modi cumque harum tempore dolores </p>
+                    <p class="p-skill"><span style="color: #00EBEB; font-weight: 600; font-size: 14;">MOBILE: </span>Com
+                        vasta experiência em React Native, desenvolvo aplicativos móveis eficientes e intuitivos,
+                        priorizando alto desempenho e inovação para atender às necessidades dos usuários.<br><br>
+                        <span style="color: #00EBEB; font-weight: 600; font-size: 14;"> Experiência Profissional:</span>
+                        Entrego soluções de qualidade e atendo às demandas dos clientes de forma eficaz.
+                    </p>
                 </div>
                 <div class="skill1">
-                    <img src="./assets/database-storage.png" style=" width: 50px;;"/>
+                    <img src="./assets/database-storage.png" style=" width: 50px;;" />
                     <p class="t-skill">DataBase</p>
-                    <p class="p-skill">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita deserunt ad corporis optio, quos, modi cumque harum tempore dolores </p>
+                    <p class="p-skill"><span style="color: #00EBEB; font-weight: 600; font-size: 14;">DATABASE:</span>
+                        Com vasta experiência em desenvolvimento de aplicações, minha especialização em gerenciamento de
+                        banco de dados garante a eficiência e a integridade dos dados, fundamentais para o funcionamento
+                        de diversas soluções tecnológicas.</p>
                 </div>
             </div>
         </section>
