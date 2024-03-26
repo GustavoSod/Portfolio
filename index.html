@@ -14,15 +14,23 @@
         </div>
         <div class="mn-sec">
             <ul class="he-list">
-                <a href="#header" style="text-decoration: none; "><li class="he-item">About Me</li></a>
-                <a href="#sk" style="text-decoration: none;"><li class="he-item">Skills</li></a>
-                <a href="#sk" style="text-decoration: none;"><li class="he-item">Portfolio</li></a>
-                <a href="#sk" style="text-decoration: none;"><li class="he-item">Contact</li></a>
+                <a href="#header" style="text-decoration: none; cursor: pointer; ">
+                    <li class="he-item">About Me</li>
+                </a>
+                <a href="#sk" style="text-decoration: none; cursor: pointer;">
+                    <li class="he-item">Skills</li>
+                </a>
+                <a href="#prj" style="text-decoration: none; cursor: pointer;">
+                    <li class="he-item">Projetos</li>
+                </a>
+                <a href="#sk" style="text-decoration: none; cursor: pointer;">
+                    <li class="he-item">Contact</li>
+                </a>
             </ul>
         </div>
     </header>
     <main>
-        <section class="sec-person">
+        <article class="sec-person">
             <div class="personal-infos">
                 <h2>Gustavo Carreira</h2>
                 <h3>And i'm a <span style="color:#00EBEB;">Software Developer</span></h3>
@@ -39,9 +47,9 @@
             <div class="personal-img">
                 <img src="./assets/hex.png" />
             </div>
-        </section>
-        <section class="sec-skills" id="sk">
-            <h1>My Skills</h1>
+        </article>
+        <article class="sec-skills" id="sk">
+            <h1 class="subTitle">My Skills</h1>
             <div class="skill-area">
                 <div class="skill1">
                     <img src="./assets/webscreen.png" style=" width: 50px;;" />
@@ -73,6 +81,51 @@
                         de diversas soluções tecnológicas.</p>
                 </div>
             </div>
-        </section>
+        </article>
+        <article class="sec-projects">
+            <h1 class="subTitle" id="prj">Projects</h1>
+            <div class="project-area">
+                <div class="project1">
+                    <div class="img-area">
+                        <img src="./assets/img-test.jpg" class="project-img" />
+                    </div>
+                    <div class="info-area">
+                        <h2 class="title-project">App Mobile </h2>
+                        <p class="desc-project">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum placeat
+                            quos, sunt, voluptate veritatis at optio maiores debitis dignissimos, dolores inventore
+                            ullam repudiandae. Ipsam quisquam obcaecati, autem a commodi aut.</p>
+                        <div class="store-icons" style="display: flex; align-items: center;">
+                            <a style="cursor: pointer;"><img
+                                    class="apple"
+                                    src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000&h=7e7b68fad19738b5649a1bfb78ff46e9"
+                                    alt="Download on the App Store"></a>
+                            <a style="cursor: pointer;"><img
+                                    class="android" alt='Get it on Google Play'
+                                    src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project1">
+                    <div class="img-area">
+                        <img src="./assets/img-test.jpg" class="project-img" />
+                    </div>
+                    <div class="info-area">
+                        <h2 class="title-project">App Mobile </h2>
+                        <p class="desc-project">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum placeat
+                            quos, sunt, voluptate veritatis at optio maiores debitis dignissimos, dolores inventore
+                            ullam repudiandae. Ipsam quisquam obcaecati, autem a commodi aut.</p>
+                        <div class="store-icons" style="display: flex; align-items: center;">
+                            <a style="cursor: pointer;"><img
+                                    class="apple"
+                                    src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1276560000&h=7e7b68fad19738b5649a1bfb78ff46e9"
+                                    alt="Download on the App Store"></a>
+                            <a style="cursor: pointer;"><img
+                                    class="android" alt='Get it on Google Play'
+                                    src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
     </main>
 </body>
