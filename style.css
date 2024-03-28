@@ -36,10 +36,14 @@
 
 .sec-person {
     background-color: #212121;
-    height: 80%;
-    margin-bottom: 0;
+}
+
+.sec-ts{
     display: flex;
-    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 250px;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: space-evenly;
 }
 
@@ -269,7 +273,6 @@
 }
 
 @media (max-width: 830px) {
-
     .personal-infos {
         width: 80%;
         height: 65%;
@@ -278,31 +281,20 @@
         align-items: center;
         margin-top: 40;
     }
-
     .personal-img {
         margin-top: 50;
     }
-
     .personal-infos h3 {
         margin-top: -10;
         margin-bottom: 0;
     }
-
     .personal-infos p {
         margin-bottom: 0;
         text-align: justify;
     }
-
-    .sec-person {
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-    }
-
     #icon2 {
         padding-left: 20;
     }
-
     .project1 {
         display: flex;
         flex-direction: column;
@@ -313,7 +305,6 @@
         height: 500px;
         margin-bottom: 50px;
     }
-
     .info-area {
         background-color: #000;
         display: flex;
@@ -326,16 +317,18 @@
         border-bottom-right-radius: 10px;
         width: 100%;
     }
-
     .img-area {
         height: 50%;
         width: 100%;
     }
-
     .project-img {
         width: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+    }
+    .sec-ts{
+        padding-top: 0;
+        padding-bottom: 50px;
     }
 }
 
@@ -370,6 +363,7 @@
     }
 
     .personal-img img {
+        margin-top: 10px;
         width: 230;
     }
 
@@ -379,5 +373,15 @@
 
     .skill1 {
         width: 65%;
+    }
+    .personal-infos h2{
+        font-size: 2rem;
+    }
+    .personal-infos h3{
+        font-size: 1rem;
+    }
+    .personal-infos p{
+        padding-top: 10px;
+        font-size: 0.75rem;
     }
 }
