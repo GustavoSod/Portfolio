@@ -38,7 +38,7 @@
     background-color: #212121;
 }
 
-.sec-ts{
+.js .sec-ts{
     display: flex;
     padding-top: 150px;
     padding-bottom: 250px;
@@ -47,6 +47,18 @@
     justify-content: space-evenly;
     opacity: 0;
     transform: translateX(-100px);
+    transition: opacity 0.5s, transform 1.5s;
+}
+
+.sec-ts{
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 250px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    opacity: 1;
+    transform: translateX(0px);
     transition: opacity 0.5s, transform 1.5s;
 }
 
@@ -98,13 +110,24 @@
 
 /*-------------------------Skills-------------------------*/
 
-.animation-projects{
+.js .animation-projects{
     opacity: 0;
     transform: translateX(-100px);
     transition: opacity 0.5s, transform 1.5s;
 }
-.animation-skills{
+.js .animation-skills{
     opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s, transform 2s;
+}
+
+.animation-projects{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: opacity 0.5s, transform 1.5s;
+}
+.animation-skills{
+    opacity: 1;
     transform: translateY(-50px);
     transition: opacity 0.5s, transform 2s;
 }
@@ -129,10 +152,11 @@
 }
 
 .skill1 {
-    background-color: #212121;
+    background-color: #000;
+    border: 5px solid #434343;
     margin: 50;
     width: 400px;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: left;
     padding-left: 20;
     padding-top: 50;
@@ -172,20 +196,14 @@
     background-size: center;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 50;
-    height: 500px;
-    width: 400px;
-    border-radius: 10px;
+    margin: 20;
+    height: 450px;
+    width: 500px;
+    cursor: pointer;
+    border-radius: 5px;
     padding-bottom: 20;
     text-align: left;
     transition: width 0.5s, height 0.5s, margin-top 0.5s;
-}
-
-.project-sec:hover{
-    cursor: pointer;
-    margin-top: -100px;
-    width: 500px;
-    height: 600px;
 }
 
 .content-project{
@@ -247,7 +265,7 @@
     }
 
     .skill1 {
-        background-color: #212121;
+        background-color: #000;
         margin: 50;
         width: 50%;
         border-radius: 10px;

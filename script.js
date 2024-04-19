@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    showOnScroll('.sec-ts', checkSkillsVisibility);
+    showOnScroll('.sec-ts', checkProjectsVisibility);
 });
 
 window.addEventListener('scroll', function() {
